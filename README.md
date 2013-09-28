@@ -2,8 +2,6 @@
 
 Flask-Restdoc is a simple tool that generates RESTful API documentation automatically from python files.
 
-<br />
-
 
 ## How-to
 
@@ -26,7 +24,6 @@ Or you can initiate app later.
 restdoc.init_app(app)
 ```
 
-<br />
 
 ### Step 2. Configuration Output Path
 
@@ -36,7 +33,6 @@ You have to set output path at `app.config`. Path must includes output file name
 app.config['RESTDOC_OUTPUT'] = '/Users/xoul/Documents/api.md'
 ```
 
-<br />
 
 ### Step 3. Decorate URL Endpoints
 
@@ -93,7 +89,6 @@ A sample response object. This will be written in JSON format.
 Error codes that can be occurred in this function.
 
 
-<br />
 
 ### Step 4. Error Definition List (Optional)
 
@@ -114,7 +109,6 @@ Then, set error definition list to `restdoc` instance.
 restdoc.set_errors(errors)
 ```
 
-<br />
 
 ### Step 5. Generate
 
@@ -124,7 +118,6 @@ Just call method `generate` to generate documentation.
 restdoc.generate()
 ```
 
-<br />
 
 ## Sample Documentation
 
