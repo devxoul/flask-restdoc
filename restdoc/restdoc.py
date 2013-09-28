@@ -104,7 +104,7 @@ class RestAPI():
 				doc += '| %d | %d | %s |\r\n' % (error[0], error_code, error[2].replace('_', '\_'))
 			doc += '\r\n\r\n'
 
-		doc += '<br /><br />'
+		doc += '<br /><br />\r\n\r\n\r\n'
 		return doc
 
 
