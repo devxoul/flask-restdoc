@@ -164,7 +164,7 @@ class Restdoc():
 				if not api: continue
 
 				api.method = list(rule.methods - set(['HEAD', 'OPTIONS']))[0]
-				api.rule = rule.rule
+				api.rule = rule.rule.replace('<', '{').replace('>', '}').replace('int:', '')
 				content += api.doc()
 
 		doc = open(self.app.config['RESTDOC_OUTPUT'], 'w')
