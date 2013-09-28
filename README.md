@@ -36,7 +36,7 @@ app.config['RESTDOC_OUTPUT'] = '/Users/xoul/Documents/api.md'
 
 ### Step 3. Decorate URL Endpoints
 
-In your view.py (or something else), add decorators to url endpoints.
+In your `view.py` (or something else), add decorators to url endpoints.
 
 ```
 api = Blueprint('api', __name__)
@@ -118,7 +118,3 @@ Just call method `generate` to generate documentation.
 restdoc.generate()
 ```
 
-
-## Sample Documentation
-
-You can see sample  documentation here: [Sample REST API Documentation](https://github.com/devxoul/flask-restdoc/blob/master/sample.md)

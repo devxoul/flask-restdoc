@@ -5,7 +5,7 @@ import json
 
 _errors = None
 
-# Base on: RFC2616 (http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
+# Based on: RFC2616 (http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 _status_codes = {
 	100: 'Continue',
 	101: 'Switching Protocols',
