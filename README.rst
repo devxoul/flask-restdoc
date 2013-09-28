@@ -1,8 +1,18 @@
 ====================
-Flask-Restdoc v0.0.1
+Flask-Restdoc v0.0.2
 ====================
 
 Flask-Restdoc is a simple tool that generates RESTful API documentation automatically from python files.
+
+
+Installation
+============
+
+You can install Flask-Restdoc with ``pip``.
+
+::
+
+	$ pip install flask-restdoc
 
 
 How-to
@@ -31,7 +41,7 @@ Or you can initiate app later.
 
 
 
-Step 2. Configuration Output Path
+Step 2. Configure Output Path
 ---------------------------------
 
 You have to set output path at ``app.config``. Path must includes output file name.
@@ -121,3 +131,30 @@ Just call method ``generate`` to generate documentation.
 ::
 
 	restdoc.generate()
+
+
+Change Logs
+===========
+
+v0.0.2
+------
+- Added line break after error definitions.
+- Converted <int:id> to {id} format.
+
+
+v0.0.1
+------
+- Hello, Restdoc!
+
+
+Future Plans
+============
+
+- Support other formats. (Such as rst, html, etc.)
+- Model documentation.
+
+
+License
+=======
+
+Flask-Restdoc is under MIT License.
