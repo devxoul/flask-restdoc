@@ -73,7 +73,7 @@ class RestAPI():
 			doc += '%s\r\n\r\n\r\n' % (self.description)
 
 		if self.params and len(self.params):
-			doc += '###### Requset\r\n\r\n'
+			doc += '###### Request\r\n\r\n'
 			doc += '| Name | Required | Description |\r\n'
 			doc += '|---|---|---|\r\n'
 			for param in self.params:
